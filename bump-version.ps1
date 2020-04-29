@@ -88,7 +88,6 @@ git add $versionFileName
 git add $changelogFileName
 git commit -m $bumpMsg
 git tag -a -m "Tag version $($version.ToString())" "v$($version.ToString())"
-git push
 git push origin --tags
 
 Write-Host $bumpMsg
